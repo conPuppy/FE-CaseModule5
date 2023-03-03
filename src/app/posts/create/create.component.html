@@ -1,0 +1,32 @@
+<!-- notivication header -->
+<div class="px-4 py-3 -mx-5 -mt-4 mb-5 border-b" xmlns:text-align="http://www.w3.org/1999/xhtml"
+     xmlns:text-align="http://www.w3.org/1999/xhtml">
+  <h4>Upload Post</h4>
+</div>
+
+<!-- notification contents -->
+<div class="flex justify-center flex-center text-center dark:text-gray-300">
+  <!--  <div class="flex flex-col choose-upload text-center">-->
+
+  <div uk-form-custom>
+    <form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+      <label>
+        Content:
+        <textarea formControlName="content"></textarea>
+      </label>
+      <label>
+        Image:
+        <input formControlName="img">
+      </label>
+
+      <button type="submit" class="button soft-warning small">Submit</button>
+    </form>
+
+
+  </div>
+
+</div>
+
+
+<!--</div>-->
+
