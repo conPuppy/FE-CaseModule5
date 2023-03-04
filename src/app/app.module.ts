@@ -7,21 +7,20 @@ import {ShowComponent} from "./posts/show/show.component";
 import {HttpClientModule} from "@angular/common/http";
 import { CreateComponent } from './posts/create/create.component';
 import {ReactiveFormsModule} from "@angular/forms";
-import { EditComponent } from './posts/edit/edit.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         ShowComponent,
         CreateComponent,
-        EditComponent,
-
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

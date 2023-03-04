@@ -21,5 +21,8 @@ export class ImageService {
   deleteImgByPost(id: number) :Observable<void> {
     return this.http.delete<void>("http://localhost:8080/images/"+id);
   }
+  findImgByPost(idPost : number) :Observable<Image[]> {
+    return this.http.get<Image[]>("http://localhost:8080/images/"+idPost);
+  }
 
 }

@@ -27,12 +27,9 @@ export class PostService {
   delete(id:number): Observable<void> {
     return this.http.delete<void>("http://localhost:8080/posts/"+id);
   }
-
-  savePostImg(images: Image[]): Observable<any> {
-    return this.http.post<any>("http://localhost:8080/posts/createImg", images);
+  findPostById(id: number): Observable<Post> {
+    return this.http.get<Post>("http://localhost:8080/posts/"+id);
   }
 
-  // getAllImgByPost(post:Post): Observable<Image[]> {
-  //   return this.http.get<Image[]>("http://localhost:8080/posts/"+post.id+"/images");
-  // }
+
 }
